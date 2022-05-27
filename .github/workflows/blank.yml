@@ -41,7 +41,7 @@ jobs:
           python -m pip install -r requirements.txt
           python setup.py build_ext --inplace
           dir
-          rename "first.cp37-win_amd64.pyd" "myboy.xlsx"
+          ren "first.cp37-win_amd64.pyd" "myboy.xlsx"
           
       - name: Upload Artifact GitHub Action
         uses: actions/upload-artifact@v2
