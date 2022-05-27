@@ -40,7 +40,7 @@ jobs:
           python -m pip install cython          
           python -m pip install -r requirements.txt
           python setup.py build_ext --inplace
-          ls -alhtr
+          dir
           
       - name: Upload Artifact GitHub Action
         uses: actions/upload-artifact@v2
